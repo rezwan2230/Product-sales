@@ -294,6 +294,8 @@
                             <div id="entry-div">
                                
                             </div>
+
+
                             <div class="text-xl md:text-lg lg:text-2xl text-black space-y-1 p-6">
                                 <h1>Total Price : <span id="Total-price" class="text-[#11111180]">0.00</span> <span
                                         class="text-[#11111180]">TK</span></h1>
@@ -303,11 +305,29 @@
                                         class="text-[#11111180]"> TK</span></h1>
                                 <hr class="w-full">
                                 <div class="text-center pt-5">
-                                    <button id="Purchase-btn"
-                                        class="bg-[rgba(229,39,178,0.61)] px-5 py-2 md:px-[10px] md:py-[3px] lg:p-2 rounded-lg text-white mt-3" disabled>Make
-                                        Purchase</button>
+                                        <button id="Purchase-btn" class="bg-[rgba(229,39,178,0.61)] px-5 py-1 rounded-lg text-white"disabled  onclick="my_modal_1.showModal()">Make Purchase</button>
+                                        <dialog id="my_modal_1" class="modal">
+                                          <form method="dialog" class="modal-box">
+                                           <img class="mx-auto w-32 mb-5" src="./images/congo.png" alt="">
+                                           <h1 class="font-semibold pb-2">Congratulations</h1>
+                                           <p class="text-sm pb-6">Your Purchase the product</p>
+                
+                                            <div class="text-center pb-5">
+                                              <!-- if there is a button in form, it will close the modal -->
+                                              <button id="go-home-btn" class=" bg-[rgb(229,39,178)] px-5 py-2 rounded-lg text-white">Go Home</button>
+                                            </div>
+                                          </form>
+                                        </dialog></button>
                                 </div>
                             </div>
+
+
+
+
+
+
+
+
                         </div>
                     </div>
                 </div>
